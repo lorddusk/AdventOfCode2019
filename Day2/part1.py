@@ -1,4 +1,6 @@
 def main(input):
+    input[1] = 12
+    input[2] = 2
     pos = 0
     intCode = 0
     while (intCode != 99):
@@ -26,7 +28,7 @@ def main(input):
 
 
 if __name__ == '__main__':
-    f = open('in/1202 program alarm.txt', 'r')
+    f = open('in/input.txt', 'r')
     input = f.readline().strip()
     output = []
     input = input.split(',')

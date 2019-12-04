@@ -1,4 +1,6 @@
 def main(input):
+    input[1] = 41
+    input[2] = 12
     pos = 0
     intCode = 0
     while (intCode != 99):
@@ -10,7 +12,6 @@ def main(input):
             outputPos = input[(pos + 3)]
             input[outputPos] = output
             pos += 4
-            print(pos)
         elif intCode == 2:
             input1 = input[input[(pos + 1)]]
             input2 = input[input[(pos + 2)]]
@@ -18,15 +19,13 @@ def main(input):
             outputPos = input[(pos + 3)]
             input[outputPos] = output
             pos += 4
-            print(pos)
         else:
             pos += 1
-            print(pos)
-    print(input)
+    print(100*input[1]+input[2])
 
 
 if __name__ == '__main__':
-    f = open('in/1202 program alarm.txt', 'r')
+    f = open('in/input.txt', 'r')
     input = f.readline().strip()
     output = []
     input = input.split(',')
