@@ -1,3 +1,6 @@
+from utils import getInput
+
+
 def run(route):
     route_info = {}
     xPos, yPos, count = 0, 0, 0
@@ -27,8 +30,7 @@ def solution(input):
 
 
 def main():
-    with open(r'in/input.txt', 'r') as f:
-        raw_input = f.read()
+    raw_input = getInput()
     print(solution(raw_input))
 
 

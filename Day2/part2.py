@@ -1,3 +1,6 @@
+from utils import getInput
+
+
 def main(input):
     input[1] = 41
     input[2] = 12
@@ -25,8 +28,7 @@ def main(input):
 
 
 if __name__ == '__main__':
-    f = open('in/input.txt', 'r')
-    input = f.readline().strip()
+    input = getInput()
     output = []
     input = input.split(',')
     for x in input:

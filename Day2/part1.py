@@ -1,3 +1,6 @@
+from utils import getInput
+
+
 def main(input):
     input[1] = 12
     input[2] = 2
@@ -12,7 +15,6 @@ def main(input):
             outputPos = input[(pos + 3)]
             input[outputPos] = output
             pos += 4
-            print(pos)
         elif intCode == 2:
             input1 = input[input[(pos + 1)]]
             input2 = input[input[(pos + 2)]]
@@ -20,16 +22,13 @@ def main(input):
             outputPos = input[(pos + 3)]
             input[outputPos] = output
             pos += 4
-            print(pos)
         else:
             pos += 1
-            print(pos)
-    print(input)
+    print(input[0])
 
 
 if __name__ == '__main__':
-    f = open('in/input.txt', 'r')
-    input = f.readline().strip()
+    input = getInput()
     output = []
     input = input.split(',')
     for x in input:
