@@ -1,4 +1,7 @@
-def getInput():
-    with open(f'in/input.txt', 'r') as f:
+def getInput(fileName = "input"):
+    with open(f'in/{fileName}.txt', 'r') as f:
         raw_input = f.read()
     return raw_input
+
+def debug(msg):
+    print(f"DEBUG: {msg}")
