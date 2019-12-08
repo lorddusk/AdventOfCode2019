@@ -1,4 +1,4 @@
-from utils import getInput
+from functions.utils import getInput
 from collections import defaultdict
 from anytree import Node, Walker
 

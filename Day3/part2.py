@@ -1,4 +1,4 @@
-from utils import getInput
+from functions.utils import getInput
 
 
 def run(route):

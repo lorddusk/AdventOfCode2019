@@ -35,7 +35,7 @@ def part2(input):
 if __name__ == '__main__':
     input = []
 
-    f = open('in/input.txt', 'r')
+    f = open('../inputs/day1.txt', 'r')
     for x in f:
         if x is not '':
             input.append(int(x))

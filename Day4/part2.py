@@ -1,4 +1,4 @@
-from utils import getInput
+from functions.utils import getInput
 
 def doubles(num):
     lastUsed = num[0]
